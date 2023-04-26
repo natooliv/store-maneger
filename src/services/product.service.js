@@ -5,6 +5,15 @@ const getAllProducts = async () => {
   return { type: null, message: products };
 };
 
+const getProductById = async (id) => {
+  const product = await productsModel.getProductById(id);
+  if (!product) {
+    return { type: 404, message: 'Product not Found' };
+}
+return { type: null, message: product };
+};
+
 module.exports = {
   getAllProducts,
+  getProductById,
 };
