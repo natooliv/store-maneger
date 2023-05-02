@@ -13,10 +13,10 @@ const todosProdutos = [
   }
 ];
 
-const idReturn = {
+const idReturn = [{
   "id": 1,
   "name": "Martelo de Thor"
-};
+}];
 
 const returnQuery = {
   id: 1, name: 'Martelo de Thor'
